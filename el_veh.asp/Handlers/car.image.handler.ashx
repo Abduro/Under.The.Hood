@@ -1,5 +1,5 @@
 /*
-	Created by Tech_dog (ebontrop@gmail.com) on 21-Dec-2024 at 09:12:32.584, UTC+7, Novosibirsk, Saturday;
+	Created by Tech_dog (ebontrop@gmail.com) on 21-Dec-2024 at 09:12:32.584, UTC+3, Batumi, Saturday;
 	This is Electric Vehicle project car image loader HTTP handler definition file;
 */
 <%@ WebHandler Language="C#" Class="CCarImageHandler" %>

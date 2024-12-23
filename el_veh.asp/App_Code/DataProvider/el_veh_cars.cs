@@ -2,7 +2,7 @@
 	Created by Tech_dog (ebontrop@gmail.com) on 26-Jan-2017 at 16:43:07.45, UTC+7, Phuket, Rawai, Thursday;
 	This is n.q.b.p SeaStats project country flag image loader HTTP request handler definoition file;
 	-----------------------------------------------------------------------------
-	Adopted to Electric Vehicle project on 21-Dec-2024 at 02:44:08.189, UTC+7, Novosibirsk, Saturday;
+	Adopted to Electric Vehicle project on 21-Dec-2024 at 02:44:08.189, UTC+4, Batumi, Saturday;
 */
 using System;
 using System.Configuration;

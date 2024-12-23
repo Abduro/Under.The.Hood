@@ -2,7 +2,7 @@
 -- Created by Tech_dog (ebontrop@gmail.com) on 10-Feb-2017 at 11:21:58a, UTC+7, Phuket, Rawai, Friday;
 -- This is n.q.b.p SeaStats project shared country and shared contact entities sql script file.
 ----------------------------------------------------------------------------
--- Adopted to Electric Vehicle test project on 20-Dec-2024 at 18:25:13.49, UTC+7, Novosibirsk, Friday;
+-- Adopted to Electric Vehicle test project on 20-Dec-2024 at 18:25:13.49, UTC+4, Batumi, Friday;
 ----------------------------------------------------------------------------
 
 --

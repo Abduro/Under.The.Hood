@@ -1,5 +1,5 @@
 /*
-	Created by Tech_dog (ebontrop@gmail.com) on 21-Dec-2024 at 08:24:39.510, UTC+7, Novosibirsk, Saturday;
+	Created by Tech_dog (ebontrop@gmail.com) on 21-Dec-2024 at 08:24:39.510, UTC+4, Batumi, Saturday;
 	This is Electric Vehicle test project data provider system error interface definition file;
 */
 using System;

@@ -1,5 +1,5 @@
 <!--
-	Created by Tech_dog (ebontrop@gmail.com) on 17-Dec-2024 at 23:10:50.066, UTV+7, Novosibirsk, Wednesday;
+	Created by Tech_dog (ebontrop@gmail.com) on 17-Dec-2024 at 23:10:50.066, UTC+4, Batumi, Wednesday;
 	This is Electric Vehicle test project cars list main page definition file;
   -->
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="el_veh_cars.aspx.cs" Inherits="CCars" ClientIDMode="Static" %>
