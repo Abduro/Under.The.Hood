@@ -1,0 +1,11 @@
+﻿
+@import url("../site.theme-all.css") screen;
+
+/*#region __body*//*https://stackoverflow.com/questions/7519856/regions-in-css-like-c-sharp-regions*/
+.cls-body-clr {
+	background-color: var(--clr-theme-d-0-bkg);
+}
+
+body {
+	background-color: var(--clr-theme-d-0-bkg);
+}

@@ -1,0 +1,24 @@
+/*
+	Created by Tech_dog (ebontrop@gmail.com) on 18-Dec-2024 at 09:53:14.264, UTC+4, Batumi, Wednesday;
+	This is Electric Vehicle test project site master page CSS definition file;
+*/
+
+/* this is important to specify the background color, otherwise, when updating, a part of the home page is visible in the background; */
+:root {
+/*	--clr-back-a: #3d3d3d; */
+	--pos-indent:  32px  ;  /* this is footer or status bar height actually; */
+	--frm-border:   0px  ;  /* iframe element shouldn't have borders, otherwise, unused space appear surround html content; */
+}
+
+:root {
+	--pos-foot-b: 0px ;
+	--pos-foot-h: var(--pos-indent);
+	--pos-foot-l: 0px ;
+	--pos-foot-w: 100%;
+}
+
+#footer {
+	background-color: var(--clr-back-a); height: var(--pos-foot-h); left: var(--pos-foot-l); position: fixed; bottom: var(--pos-foot-b);
+	border: 0;  /* no lines on sides */  width : var(--pos-foot-w);
+}
+

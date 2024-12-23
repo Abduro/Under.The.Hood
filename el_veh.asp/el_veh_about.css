@@ -1,0 +1,42 @@
+/*
+	Created by Tech_dog on 17-Dec-2024 at 00:34:40.238, UTC+4, Batumi, Tuesday;
+	This is electric vehicle test project about page CSS definition file;
+*/
+
+A:link     {color: #4799c8; background: transparent; text-decoration:none; }
+A:visited  {color: #4799c8; background: transparent; text-decoration:none; }
+A:active   {color: #4799c8; background: transparent; text-decoration:none; }
+
+html {
+	background-color: #3d3d3d;
+}
+
+body {
+	font-family       : 'Trebuchet MS',arial,verdana,sans-serif;
+	font-size         : 15px;
+	font-weight       : normal;
+	background-color  : #3d3d3d;
+	color             : #c8c8c8;
+	margin-left       : 30px;
+	margin-top        : 10px;
+	margin-right      : 30px;
+	margin-bottom     :  0px;
+}
+
+p {  margin-top: 5px; margin-bottom: 5px; }
+
+.blue-text { color        : #006ab3; }
+.brown-text { color       : #e65609; }
+.green-text  { color      : #03dac5; }
+.yellow-text  { color     : #e5b742; }
+
+.guid {
+	font              : 12.0pt 'Consolas';
+	color             : #e5b742;
+}
+
+.img-container {
+	text-align        : center;
+	vertical-align    : bottom;
+	display           : block ;
+}

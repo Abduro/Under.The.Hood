@@ -1,0 +1,20 @@
+/*
+	Created by Tech_dog (ebontrop@gmail.com) on 7-Dec-2024 at 20:59:50.776, UTC+7, Novosibirsk, Saturday;
+	This is electric vehicle web project theme CSS definition file;
+*/
+@import url("site.theme-dark.css") screen;
+
+/* https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/ ; */
+/* https://www.w3.org/TR/css-color-4/#css-system-colors ; */
+
+/* link state related colors; */
+:root {
+	--clr-link-a: #4799c8; /*blue:normal;*/
+	--clr-link-h: #00bff3; /*blue:light ;*/
+}
+
+
+	a:active   {color: var(--clr-link-a); background: transparent; text-decoration:none; }
+	a:hover    {color: var(--clr-link-h); background: transparent; text-decoration:none; }
+	a:link     {color: var(--clr-link-a); background: transparent; text-decoration:none; }
+	a:visited  {color: var(--clr-link-a); background: transparent; text-decoration:none; }

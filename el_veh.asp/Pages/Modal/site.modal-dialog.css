@@ -1,0 +1,87 @@
+﻿/*
+	Created by Tech_dog (ebontrop@gmail.com) on 26-Jan-2017 at 0:19:46a, UTC+7, Phuket, Rawai, Thursday;
+	This is n.q.b.p sea stats project 'modal dialog' style sheet file.
+	-----------------------------------------------------------------------------
+	Adopted to 'Battery On Wheels' project on 23-Dec-2024 at 05:14:23.989, UTC+4, Batumi, Monday;
+*/
+@import url("../../content/site.el-veh.css") screen; /* ToDo: it is obvious css-related files must be in one folder or have appropriate refs; */
+.shade-overlay {  /* this is the semi-transparent background behind of popup dialog or message box; */
+	position        : fixed;
+	top             : 0;
+	left            : 0;
+	width           : 100%;
+	height          : 100%;
+	background-color: #000;                           /* ToDo: shade color may be dependable from currently selected theme; */
+	filter          : alpha(opacity=70);
+	opacity         : 0.7;
+	z-index         : 100;
+	display         : none;
+}
+
+.modal-frame {
+	min-width       : 500px;                          /* ToDo: must be dynamically calculated due to currently available screen space; */
+	width           : 500px;                          /* ToDo: must be dynamically calculated due to currently available screen space; */
+	min-height      : 150px;
+	margin          : auto;
+	background      : var(--clr-theme-d-0-bkg);       /* ToDo: for current theme color maybe a little bit different one can be applied; */
+	position        : absolute;
+	z-index         : 103 ;
+	padding         : 0px ;                           /* required padding is defined by frame components or parts, for instance, frame header; */
+	box-shadow      : 0 3px 15px #111;                /* https://www.w3schools.com/cssref/css3_pr_box-shadow.php ; */
+	display         : none;                           /* https://getcssscan.com/css-box-shadow-examples ; */
+}
+
+.modal-borders {
+	border-color    : var(--clr-theme-d-0-border-s);  /* ToDo: must be dependable from current theme; */
+	border-style    : solid;
+	border-width    : 1px  ;
+	border-radius   : 0px  ;
+}
+
+.modal-frame .x-close {
+	float           : right;
+	left            :  24px;
+	position        : relative;
+	top             : -24px;
+}
+
+.modal-frame .x:hover {
+	cursor          : pointer;
+}
+
+.modal-title {
+	display    : block;
+	width      : auto;
+	height     : 32px;
+	cursor     : default;
+}
+
+.title-borders {
+	position: relative;
+
+	left: 0px; top  : 0px; height: 1px; width:100%; bottom: 0px; /* ToDo: top position is fixed and is dependable from the title height; */
+	background-image: linear-gradient(to right, var(--clr-theme-d-0-border-s), transparent);
+}
+
+.title-text      {
+	font-family  : Pirulen;
+	font-size    : 10pt   ;
+	font-weight  : normal ;
+	color        : var(--clr-theme-d-0-title-m);
+	line-height  : 21px;
+	padding      : 5px 0px 5px 5px;
+	user-select  : none;    /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting ; */
+	-webkit-user-select: none; /* Safari */
+}
+
+.modal-content   {
+	border       :   0;
+	width        : 100%  ;
+	height       : 100%  ;
+	overflow-x   : hidden;
+	overflow-y   : auto  ;
+	background   : var(--clr-theme-d-0-bkg);
+	padding      : 0px   ;
+	box-shadow   : none;
+	user-select  : none;
+}

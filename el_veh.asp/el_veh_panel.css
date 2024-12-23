@@ -1,0 +1,87 @@
+/*
+	Created by Tech_dog (ebontrop@gmail.com) on 16-Dec-2024 at 10:23:46.418, UTC+4, Batumi, Monday;
+	This is electric vehicle project main view panel page CSS declaration file.
+*/
+
+@import url("el_veh_shared.css");
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties ; */
+/* https://www.w3schools.com/css/css3_variables.asp ; */
+:root {
+	--clr-border    : var(--clr-border-d0-s) ;
+	--clr-text      : var(--clr-link-a)      ;
+	--clr-back      : var(--clr-back-d0-a)   ;
+	--clr-not_active: var(--clr-border-d0-d) ;
+}
+/* https://stackoverflow.com/questions/9648910/how-to-set-the-background-color-of-the-whole-page-in-css ; */
+html { background-color: var(--clr-back); }
+
+.body-this { padding : 0px; overflow-x : hidden; overflow-y : hidden; top : 0px; left : 0px; width : 100%; background-color: var(--clr-back); }
+/* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div ; https://stackoverflow.com/a/52005236/4325555 ; */
+.div-logo-pos { left : 0px; top : 0px  ; height : 200px; width : 199px; position : fixed; display: flex; align-items: center; justify-content: center; } /* the image size of the logo is taking into account */
+.div-tabs-pos { left : 0px; top : 200px; height :  68px; width : 199px; position : fixed; } /* height=34px per item; */
+.div-tabs-fnt {
+	font-family : Pirulen, 'Trebuchet MS',sans-serif,Verdana,Arial,'Comic Sans MS', 'Segoe UI', Tahoma;
+	font-size   : 10pt   ;
+	font-weight : normal ;
+	color       : var(--clr-link-a);
+}
+.div-tabs-fnt:hover {
+	color       : var(--clr-link-h);
+}
+/* ToDo: it is necessary to set this height value depending on the selection table; */
+.div-rest-pos { left : 0px; top : 280px; height : 500px; width : 199px!important; position : fixed; } /* inline-width att overrides the init value; */
+
+.pane-0-borders {
+	border: 0px solid var(--clr-back);
+	border-right-color: var(--clr-border);
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+/* https://www.sololearn.com/en/Discuss/1838181/how-to-set-the-table-border-color-in-html */
+/* https://stackoverflow.com/questions/339923/set-cellpadding-and-cellspacing-in-css */
+table {
+	top: 0px; left: 1px; width: 188px; height: 32px!important;
+	border: 0px solid orange;
+	border-spacing: 0px;
+/*	width : 200px; */
+/*	border-collapse: collapse;*/
+}
+		
+td.nor-a { border-left : 0px solid var(--clr-back)  ; border-top: 0px solid var(--clr-back)  ; border-bottom: 0px solid var(--clr-back)  ; border-spacing: 0px; }
+td.nor-b { border-right: 1px solid var(--clr-border); border-top: 0px solid var(--clr-back)  ; border-bottom: 0px solid var(--clr-back)  ; border-spacing: 0px; }
+		
+td.sel-a { border-left : 1px solid var(--clr-border); border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-spacing: 0px; }
+td.sel-b { border-right: 0px solid var(--clr-back)  ; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-spacing: 0px; }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+.tr-sel-act {
+	background-position-x:0px;
+	background-image: linear-gradient(to right, #554a3f, #3d3d3d); cursor: pointer;
+}
+.tr-sel-not {
+	background-position-x:0px;
+	background-image: linear-gradient(to right, #373737, #3d3d3d); cursor: pointer;
+}
+
+.tab-border-act { border: 1px solid var(--clr-border);     border-right-color: var(--clr-not_active); margin: 0px; }
+.tab-border-not { border: 1px solid var(--clr-not_active); border-right-color: var(--clr-border)    ; margin: 0px; }
+.tab-border-sep { border: 0px solid var(--clr-back);       border-right-color: var(--clr-border)    ; margin: 0px; border-right: 1px solid var(--clr-border); }
+/*
+	tab.width.active = pane::body.width:200px - pane::border::left.width:1px - pane::padding.left:10px - tab::padding:3px;
+	tab.width.inact. = tab.width.active -  pane::border::right.width:1px;
+*/
+.tab-size-act { width: 187px; height: 36px; }
+.tab-size-not { width: 185px; height: 36px; }
+.tab-size-sep { width: 189px; height:  4px; }
+
+.tab-sep-act  { background-position : left top;
+                background-image    : linear-gradient(to right, var(--clr-back), #554a3f);
+                background-size     : cover;}
+.tab-sep-not  { background-position : left top;
+                background-image    : linear-gradient(to top, var(--clr-back), #373737);
+                background-size     : cover;
+}
+
+.tab-cnt-out {
+	display:flex;align-items:center;padding-left:3px;
+}

@@ -1,0 +1,63 @@
+/*
+	Created by Tech_dog (ebontrop@gmail.com) on 18-Dec-2024 at 02:15:14.256, UTC+4, Batumi, Wedenesday;
+	This is Electric Vehicle Test ASP project default/main web page CSS definition file;
+*/
+
+@import("el_veh_shared.css");
+
+:root {
+	--pos-frame-h: 100% ;
+	--pos-frame-l: 0px  ;
+	--pos-frame-t: 0px  ;
+	--pos-frame-w: 100% ;
+}
+
+:root {
+	--pos-pane-h:  100%;
+	--pos-pane-l:   0px;
+	--pos-pane-t:   0px;
+	--pos-pane-w: 200px;
+}
+
+:root {
+	--pos-cont-h:  var(--pos-pane-h);
+	--pos-cont-l:  var(--pos-pane-w);
+	--pos-cont-t:  var(--pos-pane-t);
+	--pos-cont-w:  100%; /*790px;*/ /*ToDo: must be dynamically set to current client area width of the browser window;*/
+}
+
+:root {
+	--clr-back-a : var(--clr-back-d0-a);
+	--clr-fore-a : var(--clr-fore-d0-v);
+}
+
+:root {
+	--body-border-top-w  : 1px;
+	--body-border-top-clr: orange;
+	--body-border-top-stl: solid ;
+}
+
+body {
+	overflow-y      : hidden; 
+	border-top-width: var(--body-border-top-w);
+	border-top-color: var(--body-border-top-clr);
+	border-top-style: var(--body-border-top-stl);
+}
+
+#content {
+	background-color: var(--clr-back-a); height: var(--pos-cont-h); left: var(--pos-cont-l); position: fixed; top: var(--body-border-top-w);
+	margin-bottom   : var(--pos-indent); width : var(--pos-cont-w);
+}
+
+#content-frame {
+	border: var(--frm-border, '0px'); height: var(--pos-frame-h, 100%); width: var(--pos-frame-w, 100%); padding-bottom: var(--pos-indent, '0px');
+}
+
+#panel {
+	background-color: var(--clr-back-a); height: var(--pos-pane-h); left: var(--pos-pane-l); position: fixed; top: var(--pos-pane-t);
+	margin-bottom   : var(--pos-indent); width : var(--pos-pane-w);
+}
+
+#panel-frame {
+	border: var(--frm-border, '0px'); height: var(--pos-frame-h, 100%); width: var(--pos-frame-w, 100%); padding-bottom: var(--pos-indent);
+}
