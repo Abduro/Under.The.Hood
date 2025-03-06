@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - Electric Vehicle</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+	<!-- https://stackoverflow.com/questions/487230/serving-favicon-ico-in-asp-net-mvc ; -->
+	<link href="~/epsilon_logo_1024px.ico" rel="shortcut icon" type="image/x-icon" runat="server"/>
+	<!--link href="_Layout.css" rel="stylesheet" type="text/css"  runat="server" media="screen" /--> <!--the linking does not work in this case-->
+	<!--link href="~/el_veh_shared.css" rel="stylesheet" type="text/css"  runat="server" media="screen" /-->
+	
+	<style type="text/css">
+	
+        :root {
+	        --pos-pane-h:  100%;
+	        --pos-pane-l:   0px;
+	        --pos-pane-t:   0px;
+	        --pos-pane-w: 200px;
+        }
+
+		/* this is important to specify the background color, otherwise, when updating, a part of the home page is visible in the background; */
+		:root {
+		/*	--clr-back-a: #3d3d3d; */
+			--pos-indent:  32px  ;  /* this is footer or status bar height actually; */
+			--frm-border:   0px  ;  /* iframe element shouldn't have borders, otherwise, unused space appear surround html content; */
+		}
+
+		:root {
+			--pos-frame-h: 100% ;
+			--pos-frame-l: 0px  ;
+			--pos-frame-t: 0px  ;
+			--pos-frame-w: 100% ;
+		}
+
+		#panel {
+			background-color: var(--clr-back-a); height: var(--pos-pane-h); left: var(--pos-pane-l); position: fixed; top: var(--pos-pane-t);
+			margin-bottom   : var(--pos-indent); width : var(--pos-pane-w);
+		}
+
+		#panel-frame {
+			border: var(--frm-border, '0px'); height: var(--pos-frame-h, 100%); width: var(--pos-frame-w, 100%); padding-bottom: var(--pos-indent);
+		}
+
+		:root {
+			--pos-cont-h:  var(--pos-pane-h);
+			--pos-cont-l:  var(--pos-pane-w);
+			--pos-cont-t:  var(--pos-pane-t);
+			--pos-cont-w:  100%; /*790px;*/ /*ToDo: must be dynamically set to current client area width of the browser window;*/
+		}
+
+		#content {
+			background-color: var(--clr-back-a); height: var(--pos-cont-h); left: var(--pos-cont-l); position: fixed; top: var(--pos-cont-t);
+			margin-bottom   : var(--pos-indent); width : var(--pos-cont-w);
+		}
+
+		#content-frame {
+			border: var(--frm-border, '0px'); height: var(--pos-frame-h, 100%); width: var(--pos-frame-w, 100%); padding-bottom: var(--pos-indent);
+		}
+
+		:root {
+			--pos-foot-b: 0px;
+			--pos-foot-h: var(--pos-indent);
+			--pos-foot-l: var(--pos-pane-l);
+			--pos-foot-w: 100%;
+		}
+
+		#footer {
+			background-color: var(--clr-back-a); height: var(--pos-foot-h); left: var(--pos-foot-l); position: fixed; bottom: var(--pos-foot-b);
+			border: 0;  /* no lines on sides */  width : var(--pos-foot-w);
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		// https://stackoverflow.com/questions/37801882/how-to-change-css-root-color-variables-in-javascript ;
+		// https://stackoverflow.com/questions/71933146/how-to-adjust-a-css-property-using-a-javascript-variable ;
+		function fn_on_size_changed() {
+			const root = document.querySelector(':root');
+			if (root) {
+				root.style.setProperty('--pos-cont-w', this.innerWidth - 200);
+			}
+		//	console.log('window size is changed: height=' + this.innerHeight + 'px;width=' + this.innerWidth + 'px;'); // this is the element that sets this handler function;
+		//	console.log('property content width:' + root.style.getPropertyValue('--pos-cont-w'));
+			var content = document.getElementById("content");
+			if (content)
+				content.style.width = root.style.getPropertyValue('--pos-cont-w') + 'px';
+		}
+		// https://stackoverflow.com/questions/2172800/automatically-detect-web-browser-window-width-change ;
+		// https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event ;
+		window.addEventListener("resize",fn_on_size_changed);
+	</script>
+</head>
+<body id ="this_is_the_body" style="overflow-y:hidden;">
+	<form runat="server">
+		<div id="panel">
+			<iframe id="panel-frame" src="~/el_veh_panel.html"></iframe>
+		</div>
+		<div id="content">
+			<!--the first tab on the left panel is also selected by default, and this coincides with the display of the first page below;-->
+			<iframe id="content-frame" src="~/el_veh_home.html" style="border-top-width:1px;border-top-color:orange;border-top-style:solid;"></iframe>
+		</div>
+		
+		<iframe id="footer" src="~/el_veh_foot.html"></iframe> <!--ToDo: div-element must be used as it's made above for other iframes;-->
+		@RenderBody()
+	</form>
+</body>
+</html>

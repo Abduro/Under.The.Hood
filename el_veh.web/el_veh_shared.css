@@ -1,0 +1,27 @@
+/*
+	Created by Tech_dog (ebontrop@gmail.com) on 7-Dec-2024 at 23:04:00.698, UTC+7, Novosibirsk, Saturday;
+	This is electric vehicle project shared CSS declaration file.
+*/
+
+@import url("content/theme/site.theme-all.css");
+
+:root {
+	--none : 0;                  /* nothing */
+	--clr-back-d0-a  : #3d3d3d;  /* background color for all elements in dark theme ; */
+	--clr-fore-d0-a  : #ebebeb;  /* text color for element that is in normal state or is enabled; */
+	--clr-fore-d0-v  : #dcdcdc;  /* this is the text fore color that is defined in MS VS for dark theme by default; */
+	--clr-fore-d0-x  : #a0a0a0;  /* a little bit darker than above color; */
+	--clr-back-d0-t  : #525252;  /* this is grayed background color for table or other textual element display; */
+}
+
+	/* https://htmlcolorcodes.com/colors/shades-of-orange/ :: the orange color in mixing with other color; */
+	/* https://htmlcolorcodes.com/colors/orange/           :: #ffa500 : used as border color and alternative background in dark theme; */
+	/* https://htmlcolorcodes.com/colors/yellow-orange/    :: #ffaa33 : looks like an alternative color for above one; */
+
+:root {
+	--clr-border-d0-s : orange ; /* this is the border color defined by the system; */
+	--clr-border-d0-l : #e5b742; /* light yellow color in comparison with system defined one; */
+	--clr-border-d0-t : #7f6a44; /* faded yellow color that is used like as semi-transparent in cases when user eyed attracting is not required; */
+	--clr-border-d0-d : #737373; /* border color for inactive or disabled elements; */
+}
+
