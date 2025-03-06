@@ -2,7 +2,7 @@
 	Created by Tech_dog (ebontrop@gmail.com) on 26-Jan-2017 at 0:51:03a, UTC+7, Phuket, Rawai, Thursday;
 	This is n.q.b.p sea stats project 'modal dialog' java script file.
 	-----------------------------------------------------------------------------
-	Adopted to electric vehicle project on 7-Dec-2024 at 21:38:53.034, UTC+7, Novosibirsk, Saturday;
+	Adopted to electric vehicle project on 7-Dec-2024 at 21:38:53.034, UTC+7, Batumi, Saturday;
 */
 
 // https://www.w3schools.com/jsref/dom_obj_dialog.asp ;

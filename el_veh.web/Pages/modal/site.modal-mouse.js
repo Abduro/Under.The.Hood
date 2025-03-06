@@ -1,5 +1,5 @@
 /*
-	Created by Tech_dog (ebontrop@gmail.com) on 7-Dec-2024 at 21:38:53.049, UTC+7, Novosibirsk, Saturday;
+	Created by Tech_dog (ebontrop@gmail.com) on 7-Dec-2024 at 21:38:53.049, UTC+7, Batumi, Saturday;
 	This is electric vehicle web project modal dialog mouse handler JS implementation file;
 */
 

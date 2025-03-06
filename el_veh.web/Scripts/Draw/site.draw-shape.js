@@ -1,5 +1,5 @@
 /*
-	Created by Tech_dog (ebontrop@gmail.com) on 7-Dec-2024 at 21:56:53.332, UTC+7, Novosibirsk, Saturday;
+	Created by Tech_dog (ebontrop@gmail.com) on 7-Dec-2024 at 21:56:53.332, UTC+7, Batumi, Saturday;
 	This is electric vehicle web project draw primitive shape wrapper JS implementation file;
 */
 

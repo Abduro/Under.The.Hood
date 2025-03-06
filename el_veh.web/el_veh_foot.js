@@ -1,5 +1,5 @@
 /*
-	Created by Tech_dog (ebontrop@gmail.com) on 16-Dec-2024 at 14:23:08.68, UTC+7, Novosibirsk, Monday
+	Created by Tech_dog (ebontrop@gmail.com) on 16-Dec-2024 at 14:23:08.68, UTC+7, Batumi, Monday
 	This is electric vehicle ASP web project main page footer/statusbar component JS implementation file;
 */
 

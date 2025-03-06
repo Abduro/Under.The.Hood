@@ -1,5 +1,5 @@
 /*
-	Created by Tech_dog (ebontrop@gmail.com) on 17-Dec-2024 at 16:56:52.098, UTC+7, Novosibirsk, Tuesday
+	Created by Tech_dog (ebontrop@gmail.com) on 17-Dec-2024 at 16:56:52.098, UTC+7, Batumi, Tuesday
 	This is electric vehicle ASP web project 'About' page JS implementation file;
 */
 
